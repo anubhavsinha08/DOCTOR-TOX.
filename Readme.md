@@ -224,8 +224,8 @@ npm run build
 
 **Anubhav Kumar Sinha**
 
-- GitHub: https://github.com/YOUR_USERNAME
-- LinkedIn: https://linkedin.com/in/YOUR_LINKEDIN
+- GitHub: https://github.com/anubhavsinha08
+- LinkedIn: https://www.linkedin.com/in/anubhav-kumar-sinha-3899982b1/
 
 ---
 
