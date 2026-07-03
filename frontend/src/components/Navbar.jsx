@@ -92,7 +92,7 @@ const Navbar = () => {
 
           {location.pathname === "/" && (
             <button
-              onClick={() => window.open("https://doctortox.vercel.app/admin-dashboard", "_blank")}
+              onClick={() => window.open("https://doctortox-adminpanel.vercel.app", "_blank")}
               className="hidden md:block px-5 py-2 rounded-full border border-teal-600 text-teal-600 hover:bg-teal-600 hover:text-white transition"
             >
               Admin Panel
@@ -222,39 +222,68 @@ const Navbar = () => {
 
         <div className="flex flex-col text-lg">
 
-          <NavLink
-            to="/"
-            onClick={() => setShowMenu(false)}
-            className="px-6 py-4 border-b"
-          >
-            Home
-          </NavLink>
+  <NavLink
+    to="/"
+    onClick={() => setShowMenu(false)}
+    className="px-6 py-4 border-b"
+  >
+    Home
+  </NavLink>
 
-          <NavLink
-            to="/doctors"
-            onClick={() => setShowMenu(false)}
-            className="px-6 py-4 border-b"
-          >
-            Doctors
-          </NavLink>
+  <NavLink
+    to="/doctors"
+    onClick={() => setShowMenu(false)}
+    className="px-6 py-4 border-b"
+  >
+    Doctors
+  </NavLink>
 
-          <NavLink
-            to="/about"
-            onClick={() => setShowMenu(false)}
-            className="px-6 py-4 border-b"
-          >
-            About
-          </NavLink>
+  <NavLink
+    to="/about"
+    onClick={() => setShowMenu(false)}
+    className="px-6 py-4 border-b"
+  >
+    About
+  </NavLink>
 
-          <NavLink
-            to="/contact"
-            onClick={() => setShowMenu(false)}
-            className="px-6 py-4 border-b"
-          >
-            Contact
-          </NavLink>
+  <NavLink
+    to="/contact"
+    onClick={() => setShowMenu(false)}
+    className="px-6 py-4 border-b"
+  >
+    Contact
+  </NavLink>
 
-        </div>
+  {/* Admin Panel */}
+  {location.pathname === "/" && (
+    <button
+      onClick={() => {
+        window.open(
+          "https://doctortox.vercel.app/admin-dashboard",
+          "_blank"
+        );
+        setShowMenu(false);
+      }}
+      className="mx-5 mt-6 py-3 rounded-full border border-teal-600 text-teal-600 font-medium hover:bg-teal-600 hover:text-white transition"
+    >
+      Admin Panel
+    </button>
+  )}
+
+  {/* Login / Create Account */}
+  {!token && (
+    <button
+      onClick={() => {
+        navigate("/login");
+        setShowMenu(false);
+      }}
+      className="mx-5 mt-4 bg-teal-600 text-white py-3 rounded-full font-medium hover:bg-teal-700 transition"
+    >
+      Create Account
+    </button>
+  )}
+
+</div>
 
       </div>
 

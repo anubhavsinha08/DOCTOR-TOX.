@@ -19,7 +19,7 @@ const Navbar = () => {
   }
 
   const goToUserPanel = () => {
-    window.location.href = 'https://doctortox.vercel.app/'
+    window.location.href = 'https://doctortox-by-anubhav.vercel.app/'
   }
 
   const isOnDashboard =
