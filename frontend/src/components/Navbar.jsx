@@ -92,7 +92,7 @@ const Navbar = () => {
 
           {location.pathname === "/" && (
             <button
-              onClick={() => window.open("https://doctor-tox-gou5.vercel.app/admin-dashboard", "_blank")}
+              onClick={() => window.open("https://doctortox.vercel.app/admin-dashboard", "_blank")}
               className="hidden md:block px-5 py-2 rounded-full border border-teal-600 text-teal-600 hover:bg-teal-600 hover:text-white transition"
             >
               Admin Panel
