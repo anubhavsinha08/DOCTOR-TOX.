@@ -259,7 +259,7 @@ const Navbar = () => {
     <button
       onClick={() => {
         window.open(
-          "https://doctortox.vercel.app/admin-dashboard",
+          "https://doctortox-adminpanel.vercel.app",
           "_blank"
         );
         setShowMenu(false);
